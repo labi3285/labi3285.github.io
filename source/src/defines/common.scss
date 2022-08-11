@@ -1,0 +1,20 @@
+$cm-color-back: #f6f7f8;
+$cm-color-border: #e5e5e5;
+
+$cm-color-tint: rgba(59,130,246,1);
+$cm-color-tint08: rgba(59,130,246,0.8);
+
+$cm-color-hover-nav: #fff2ce;
+$cm-color-hover: #f8f8f8;
+
+$cm-mobile-max-width: 600px;
+
+.cm-flex-space {
+  flex: 1;
+}
+
+.cm-card {
+  border: 1px solid $cm-color-border;
+  border-radius: 5px;
+}
+

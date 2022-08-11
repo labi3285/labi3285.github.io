@@ -1,0 +1,55 @@
+@import '../../../defines/common.scss';
+
+.IconButton {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  border: 1px solid $cm-color-border;
+  border-radius: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
+  &-Icon {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+  }
+  &-Name {
+    font-size: 15px;
+    color: #333333;
+    font-weight: 500;
+  }
+}
+.IconButton:hover {
+  background-color: $cm-color-hover;
+}
+
+@media screen {
+  .IconButton {
+    margin: 0 5px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    &-Icon {
+      top: 7px;
+      left: 10px;
+    }
+    &-Name {
+      padding-left: 20px;
+    }
+  }
+}
+
+// 移动设备
+@media screen and (max-width: $cm-mobile-max-width) {
+  .IconButton {
+    margin: 0 5px;
+    border-radius: 5px;
+    padding: 3px 10px;
+    &-Icon {
+      top: 6px;
+      left: 10px;
+    }
+    &-Name {
+      padding-left: 20px;
+    }
+  }
+}

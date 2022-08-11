@@ -1,0 +1,31 @@
+@import '../../defines/common.scss';
+
+.Home {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $cm-color-back;
+
+  &-Intro {
+    &-Welcome {
+      font-size: 30px;
+      color: #333333;
+      font-weight: bold;
+      padding: 5px 0;
+    }
+    &-Info {
+      font-size: 15px;
+      color: #666666;
+      font-weight: 300;
+    }
+    &-Contact {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+    }
+  }
+}
+
+
+
+
+

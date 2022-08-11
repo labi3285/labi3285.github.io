@@ -1,0 +1,19 @@
+@import '../../defines/common.scss';
+
+.BottomBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  // background-color: white;
+  // border-top: 0.5px solid $cm-color-border;
+  // border-bottom: 0.5px solid $cm-color-border;
+  text-align: center;
+  &-Text {
+    display: inline-block;
+    font-size: 14px;
+    color: #AAAAAA;
+  }
+}

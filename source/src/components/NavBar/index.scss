@@ -1,0 +1,80 @@
+@import '../../defines/common.scss';
+
+.NavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+
+  &-Back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    @extend .cm-card;
+    z-index: -1;
+    border-bottom: 0.5px solid $cm-color-border;
+  }
+
+  &-Left {
+    &-Logo {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &-Right {
+    display: flex;
+    align-items: center;
+    &-Button {
+      display: flex;
+      align-items: center;
+      border-radius: 4px;
+      cursor: pointer;
+      &-Icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+      }
+      &-Name {
+        font-size: 14px;
+        color: #777777;
+        font-weight: 600;
+      }
+    }
+    &-Button:hover {
+      background-color: $cm-color-hover-nav;
+    }
+  }
+}
+
+@media screen {
+  .NavBar {
+    height: 60px;
+    padding: 0 20px;
+    &-Right-Button {
+      padding: 10px 15px;
+    }
+  }
+  .NavBarPlaceholder {
+    height: 60px;
+  }
+}
+
+// 移动设备
+@media screen and (max-width: $cm-mobile-max-width) {
+  .NavBar {
+    height: 44px;
+    padding: 0 10px;
+    &-Right-Button {
+      padding: 5px 5px;
+    }
+  }
+  .NavBarPlaceholder {
+    height: 44px;
+  }
+}

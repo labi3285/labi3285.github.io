@@ -1,0 +1,16 @@
+@import '../../../defines/common.scss';
+
+@media screen {
+  .LayoutListItem {
+    margin: 0 15px 20px 15px;
+    width: 600px;
+  }
+}
+
+// 移动设备
+@media screen and (max-width: $cm-mobile-max-width) {
+  .LayoutListItem {
+    margin: 0 10px 10px 10px;
+    width: calc(100% - 15px * 2);
+  }
+}

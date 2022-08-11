@@ -1,0 +1,75 @@
+@import '../../../defines/common.scss';
+
+.HomeCard {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  border-color: #eeeeee;  
+  @extend .cm-card;
+  box-sizing: border-box;
+  .PostPic {
+    position: absolute;
+  }
+  &-Title {
+    color: #333333;
+    font-weight: 500;
+  }
+  &-Content {
+    color: #666666;
+  }
+}
+
+@media screen {
+  .HomeCard {
+    min-height: 190px;
+    padding: 20px;
+    margin-bottom: 20px;
+    .PostPic {
+      width: 150px;
+      height: 150px;
+    }
+    &-Title {
+      padding-left: 170px;
+      font-size: 20px;
+    }
+    &-Content {
+      margin-top: 10px;
+      padding-left: 170px;
+      font-size: 14px;
+    }
+    &-Handle {
+      margin-top: 10px;
+      padding-left: 170px;
+    }
+  }
+}
+
+// 移动设备
+@media screen and (max-width: $cm-mobile-max-width) {
+  .HomeCard {
+    min-height: 120px;
+    padding: 10px;
+    margin-bottom: 10px;
+    .PostPic {
+      width: 100px;
+      height: 100px;
+    }
+    &-Title {
+      padding-left: 110px;
+      font-size: 16px;
+    }
+    &-Content {
+      margin-top: 5px;
+      padding-left: 110px;
+      font-size: 12px;
+    }
+    &-Handle {
+      margin-top: 5px;
+      padding-left: 110px;
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      background-color: yellow;
+    }
+  }
+}
