@@ -41,29 +41,26 @@ export default function () {
             </div>
           </div>
         </LayoutListItem>
-        <LayoutListItem>
-          <HomeCard icon={ResourcePostPic_dida} title="“滴答”APP正式上线" content="“滴答”APP是一款基于本地存储的生活小助手，你可以在APP中管理待办事项、打卡、记账、管理文件、看书或写日记等。">
-            <IconButton icon={IconOpen}>详情</IconButton>
-          </HomeCard>
-          <HomeCard icon={ResourcePostPic_framework} title="QXUIKitExtension" content="Swift语言开发，全面封装系统组件，提供基于配置模式的组件封装，可大大提高开发效率，降低代码耦合。子项目：QXUIKitExtensionDebugSettings、QXUIKitExtensionEditPictureView、QXUIKitExtensionPictureView">
-            <IconButton icon={IconOpen}>详情</IconButton>
-          </HomeCard>
-          <HomeCard icon={ResourcePostPic_framework} title="QXConsMaker" content="Swift语言开发，最简单高效的自动布局约束库，可大大提高开发效率。">
-            <IconButton icon={IconOpen}>详情</IconButton>
-          </HomeCard>
-          <HomeCard icon={ResourcePostPic_framework} title="QXMessageView" content="Swift语言开发，基于界面的消息提示框架，智能提示时长，交互式隐藏，高度可定制化（面向协议，用户可自己实现展示效果）。">
-            <IconButton icon={IconOpen}>详情</IconButton>
-          </HomeCard>
-          <HomeCard icon={ResourcePostPic_framework} title="QXBookReader" content="Swift语言开发，小说阅读器SDK，支持主题切换，支持epub、txt两种格式。">
-            <IconButton icon={IconOpen}>详情</IconButton>
-          </HomeCard>
-          
-        </LayoutListItem>
 
+        <HomeCard icon={ResourcePostPic_dida} title="“滴答”APP正式上线" content="“滴答”APP是一款基于本地存储的生活小助手，你可以在APP中管理待办事项、打卡、记账、管理文件、看书或写日记等。">
+          <IconButton icon={IconOpen}>详情</IconButton>
+        </HomeCard>
+        <HomeCard icon={ResourcePostPic_framework} title="QXUIKitExtension" content="Swift语言开发，全面封装系统组件，提供基于配置模式的组件封装，可大大提高开发效率，降低代码耦合。子项目：QXUIKitExtensionDebugSettings、QXUIKitExtensionEditPictureView、QXUIKitExtensionPictureView">
+          <IconButton icon={IconOpen}>详情</IconButton>
+        </HomeCard>
+        <HomeCard icon={ResourcePostPic_framework} title="QXConsMaker" content="Swift语言开发，最简单高效的自动布局约束库，可大大提高开发效率。">
+          <IconButton icon={IconOpen}>详情</IconButton>
+        </HomeCard>
+        <HomeCard icon={ResourcePostPic_framework} title="QXMessageView" content="Swift语言开发，基于界面的消息提示框架，智能提示时长，交互式隐藏，高度可定制化（面向协议，用户可自己实现展示效果）。">
+          <IconButton icon={IconOpen}>详情</IconButton>
+        </HomeCard>
+        <HomeCard icon={ResourcePostPic_framework} title="QXBookReader" content="Swift语言开发，小说阅读器SDK，支持主题切换，支持epub、txt两种格式。">
+          <IconButton icon={IconOpen}>详情</IconButton>
+        </HomeCard>
 
       </LayoutList>
-      <GoTop />
       <BottomBar />
+      <GoTop />
     </div>
   )
 }
