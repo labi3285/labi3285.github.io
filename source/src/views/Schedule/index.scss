@@ -1,0 +1,72 @@
+@import '../../defines/common.scss';
+
+.Schedule {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $cm-color-back;
+  &-Title {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #333333;
+  }
+  &-Brief {
+    color: #666666;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .Schedule-Item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    &-Title {
+      font-size: 14px;
+      color: #333333;
+    }
+    &-Content {
+      margin-top: 5px;
+      font-size: 14px;
+      color: $cm-color-tint;
+    }
+    &-Link {
+      margin-top: 5px;
+      font-size: 14px;
+      color: $cm-color-tint;
+      text-decoration:underline;
+    }
+  }
+}
+
+@media screen {
+  .Schedule {
+    &-Title {
+      padding-bottom: 20px;
+      font-size: 30px;
+      &-Icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+// 移动设备
+@media screen and (max-width: $cm-mobile-max-width) {
+  .Schedule {
+    &-Title {
+      padding-bottom: 10px;
+      font-size: 20px;
+      &-Icon {
+        width: 24px;
+        height: 24px;
+        border-radius: 3px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+
+

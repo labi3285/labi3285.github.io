@@ -1,0 +1,86 @@
+@import '../../../defines/common.scss';
+
+.ProductCard {
+  position: relative;
+  box-sizing: border-box;      
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  @extend .cm-card;
+  &-Icon {
+    position: absolute;
+    @extend .cm-card;
+  }
+  &-Title {
+    padding-left: 100px;
+    color: #333333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  &-Content {
+    padding-left: 100px;
+    color: #666666;
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    word-break: break-all;
+  }
+}
+
+
+@media screen {
+  .ProductCard {
+    padding: 15px;
+    width: calc((100% - 15px) / 2);
+    height: 100px;
+    margin-bottom: 15px;
+    &-Icon {
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      width: 60px;
+      height: 60px;
+    }
+    &-Title {
+      padding-left: 75px;
+      font-size: 14px;
+    }
+    &-Content {
+      padding-left: 75px;
+      margin-top: 7px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+}
+
+// 移动设备
+@media screen and (max-width: $cm-mobile-max-width) {
+  .ProductCard {
+    padding: 10px;
+    width: 100%;
+    height: 73px;
+    margin-bottom: 10px;
+    &-Icon {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      width: 50px;
+      height: 50px;
+    }
+    &-Title {
+      padding-left: 65px;
+      font-size: 14px;
+    }
+    &-Content {
+      padding-left: 65px;
+      margin-top: 5px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+}

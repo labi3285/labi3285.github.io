@@ -1,42 +1,27 @@
-@import '../../../defines/common.scss';
+@import '../../defines/common.scss';
 
 .Label {
-  margin: 0 5px;
-  display: flex;
-  align-items: center;
-  border: 1px solid $cm-color-border;
-  border-radius: 5px;
-  background-color: #ffffff;
-  padding: 3px 10px;
-  cursor: pointer;
-  &-Icon {
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
-  }
-  &-Name {
-    font-size: 15px;
-    color: #333333;
-    font-weight: 500;
-  }
-}
-.IconButton:hover {
-  background-color: $cm-color-hover;
+  display: inline-block;
+  font-weight: 500;
+  border-width: 1px;
+  border-style: solid;
 }
 
 @media screen {
-  .IconButton {
-    margin: 0 5px;
+  .Label {
+    margin-right: 10px;
     border-radius: 5px;
-    padding: 5px 10px;
+    font-size: 14px;
+    padding: 3px 10px;
   }
 }
 
 // 移动设备
 @media screen and (max-width: $cm-mobile-max-width) {
-  .IconButton {
-    margin: 0 5px;
-    border-radius: 5px;
+  .Label {
+    margin-right: 5px;
+    border-radius: 3px;
+    font-size: 12px;
     padding: 3px 10px;
   }
 }

@@ -1,6 +1,6 @@
 @import '../../defines/common.scss';
 
-.NavBar {
+.NavBarDetail {
   position: fixed;
   top: 0;
   left: 0;
@@ -22,35 +22,26 @@
   }
 
   &-Left {
-    &-Logo {
-      width: 20px;
-      height: 20px;
-    }
-  }
-  &-Right {
-    display: flex;
-    align-items: center;
     &-Button {
       display: flex;
       align-items: center;
-      border-radius: 4px;
-      cursor: pointer;
+      border-radius: 5px;
       &-Icon {
         width: 20px;
         height: 20px;
-        margin-right: 5px;
+        margin-right: 3px;
       }
       &-Name {
         font-size: 14px;
-        font-weight: 600;
+        color: #666666;
       }
     }
   }
 }
 
 @media (any-hover: hover) {
-	.NavBar {
-    &-Right {
+	.NavBarDetail {
+    &-Left {
       &-Button:hover {
         background-color: $cm-color-hover-nav;
       }
@@ -59,28 +50,32 @@
 }
 
 @media screen {
-  .NavBar {
+  .NavBarDetail {
     height: 60px;
     padding: 0 20px;
-    &-Right-Button {
-      padding: 10px 15px;
+    &-Left {
+      &-Button {
+        padding: 5px;
+      }
     }
   }
-  .NavBarPlaceholder {
+  .NavBarDetailPlaceholder {
     height: 60px;
   }
 }
 
 // 移动设备
 @media screen and (max-width: $cm-mobile-max-width) {
-  .NavBar {
+  .NavBarDetail {
     height: 50px;
     padding: 0 10px;
-    &-Right-Button {
-      padding: 5px 5px;
+    &-Left {
+      &-Button {
+        padding: 5px;
+      }
     }
   }
-  .NavBarPlaceholder {
+  .NavBarDetailPlaceholder {
     height: 50px;
   }
 }

@@ -1,0 +1,27 @@
+@import '../../defines/common.scss';
+
+.Contact {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $cm-color-back;
+  .Contact-Item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    &-Title {
+      font-size: 14px;
+      color: #333333;
+    }
+    &-Content {
+      margin-top: 5px;
+      font-size: 14px;
+      color: $cm-color-tint;
+      // text-decoration: underline;
+    }
+  }
+}
+
+
+
+
+

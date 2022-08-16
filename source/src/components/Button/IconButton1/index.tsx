@@ -11,12 +11,20 @@ import IconNavUser from '../../assets/nav_user.png'
 
 interface Props {
   icon: any
+  onClick?: Function,
   children: any
 }
 class IconButton1 extends Component<Props> {
+  handleClick = (e: any) => {
+    e.preventDefault()
+    e.stopPropagation()
+    if (this.props.onClick) {
+      this.props.onClick()
+    }
+  }
   render() {
     return (
-      <div className='IconButton1'>
+      <div className='IconButton1' onClick={this.handleClick}>
         <img className='IconButton1-Icon' src={this.props.icon} />
         <div className='IconButton1-Name'>{this.props.children}</div>
       </div>

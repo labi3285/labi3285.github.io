@@ -1,0 +1,18 @@
+@import '../../defines/common.scss';
+
+.Product {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $cm-color-back;
+  .Product-Collection {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+
+
+
+

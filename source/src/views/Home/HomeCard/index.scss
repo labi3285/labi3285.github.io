@@ -3,8 +3,6 @@
 .HomeCard {
   position: relative;
   width: 100%;
-  background-color: white;
-  border-color: #eeeeee;  
   @extend .cm-card;
   box-sizing: border-box;
   .PostPic {
@@ -17,13 +15,15 @@
   &-Content {
     color: #666666;
   }
+  &-Handle {
+    text-align: right;
+  }
 }
 
 @media screen {
   .HomeCard {
     min-height: 190px;
     padding: 20px;
-    margin-bottom: 20px;
     .PostPic {
       width: 150px;
       height: 150px;
@@ -36,6 +36,7 @@
       margin-top: 10px;
       padding-left: 170px;
       font-size: 14px;
+      line-height: 20px;
     }
     &-Handle {
       margin-top: 10px;
@@ -49,19 +50,19 @@
   .HomeCard {
     min-height: 120px;
     padding: 10px;
-    margin-bottom: 10px;
     .PostPic {
       width: 100px;
       height: 100px;
     }
     &-Title {
       padding-left: 110px;
-      font-size: 16px;
+      font-size: 14px;
     }
     &-Content {
       margin-top: 5px;
       padding-left: 110px;
       font-size: 12px;
+      line-height: 17px;
     }
     &-Handle {
       margin-top: 5px;

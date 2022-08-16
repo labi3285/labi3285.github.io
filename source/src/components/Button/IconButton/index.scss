@@ -3,7 +3,6 @@
 .IconButton {
   position: relative;
   display: inline-block;
-  margin: 0 5px;
   border: 1px solid $cm-color-border;
   border-radius: 5px;
   background-color: #ffffff;
@@ -15,19 +14,22 @@
   }
   &-Name {
     font-size: 15px;
-    color: #333333;
-    font-weight: 500;
+    color: #444444;
+    font-weight: 400;
   }
 }
-.IconButton:hover {
-  background-color: $cm-color-hover;
+
+@media (any-hover: hover) {
+  .IconButton:hover {
+    background-color: $cm-color-hover;
+  }
 }
 
 @media screen {
   .IconButton {
     margin: 0 5px;
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 7px 10px;
     &-Icon {
       top: 7px;
       left: 10px;
@@ -43,9 +45,9 @@
   .IconButton {
     margin: 0 5px;
     border-radius: 5px;
-    padding: 3px 10px;
+    padding: 5px 10px;
     &-Icon {
-      top: 6px;
+      top: 5px;
       left: 10px;
     }
     &-Name {

@@ -1,16 +1,24 @@
 @import '../../../defines/common.scss';
 
+.LayoutListCard {
+  @extend .cm-card;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
 @media screen {
-  .LayoutListItem {
+  .LayoutListCard {
     margin: 0 15px 15px 15px;
     width: 600px;
+    padding: 20px;
   }
 }
 
 // 移动设备
 @media screen and (max-width: $cm-mobile-max-width) {
-  .LayoutListItem {
+  .LayoutListCard {
     margin: 0 10px 10px 10px;
     width: calc(100% - 15px * 2);
+    padding: 10px;
   }
 }
